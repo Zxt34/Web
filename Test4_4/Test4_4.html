@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script>
+        // alert(2);
+        var articles = [{
+            title:"我的第一篇博客",
+            content:"学习HTML"
+        },{
+            title:"我的第二篇博客",
+            content:"学习JS"
+        }];
+        console.log(articles)
+        console.log(JSON.stringify(articles))
+        function l(x,y,z){
+            console.log(x+","+y+","+z);
+        }
+    </script>
+<!--    <script type="application/javascript" src="js/1.js"></script>-->
+</head>
+<body onload="l(1)">
+    <h2>用户登录</h2>
+    <form action="/xxx">
+        用户名：<input type="text" name="username"><br>
+        密  码：<input type="password" name="password"><br>
+        <input type="submit" value="登录">
+    </form><br>
+    <input type="button" onclick="alert(1)" value="点1">
+    <br>
+    <br>
+    <input type="text" onblur="alert(2)">
+<!--    <input type="text" onfocus="alert(3)">-->
+<!--    <input type="submit" value="提交" onsubmit="alert(4)">-->
+</body>
+</html>
